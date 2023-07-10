@@ -1,0 +1,612 @@
+/*-----In this i use box model properties and i also add comment to some important part
+ I also use combinators in this  
+------*/
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    background-color: rgb(238, 238, 209);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_left img {
+    object-fit: contain;
+    height: 30px;
+    margin-right: 0px;
+     
+}
+
+.header {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    top: 0;
+    z-index: 999;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid lightgray;
+    padding: 10px;
+    background-color: white;
+    height: 50px;
+}
+
+.header_left {
+    display: flex;
+}
+
+.header_right {
+    display: flex;
+}
+
+.header_search {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 10px;
+    width: 250px;
+    color: gray;
+    background-color: rgb(236, 242, 245);
+    margin-left: 6px;
+}
+
+.header_search input {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.headerOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.headerOption:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.header_account {
+    display: flex;
+    flex-direction: column;
+}
+.header_account img {
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.header_account i{
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+.header_premium {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-left: 8px;
+}
+
+/* left-sidebar */
+/* sidebar_top start */
+
+.left-sidebar{
+    flex-basis: 25%;
+    width: 19%;
+    left: 100px;
+   position: absolute;
+    border: 2px lightgrey solid;
+   border-radius: 6px;
+     margin-top: 89px;
+     cursor: pointer;
+}
+.sidebar-profile-box{
+    background:#fff;
+}
+.sidebar-profile-info{
+    padding: 0 25px;
+}
+.sidebar-profile-info h3{
+    margin-left: 48px;
+}
+.sidebar-profile-info img{
+    width: 80px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 0px;
+    margin-top: -45px;
+    margin-left: 50px;
+}
+.background{
+    height: 70px;
+    border-radius: 5px;
+}
+.info{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgrey;
+    
+   
+}
+.sidebar-profile-info p{
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: gray;
+}
+.info span{
+    float: right;
+    font-size: 18px;
+    color:rgb(84, 55, 214);
+    font-weight:normal;
+}
+.info h5{
+    color: gray;
+    border-bottom: lightgray;
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 0;
+
+}
+.info h4{
+    margin-top:2px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0;
+}
+.info h3{
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.box{
+    margin-top: 10px;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 10px;
+    color: darkgrey;
+}
+
+.box h4{
+    color: grey;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.bookmark {
+    display: flex;
+    margin-left: 4px;
+}
+
+.bookmark span {
+    margin: 4px 5px 9px;
+}
+/*sidebar_top end*/
+
+/*sidebar_bottom start*/
+.sidebar_bottom {
+    flex-basis: 50%;
+    width: 19%;
+    position: absolute;
+    left: 100px;
+    border: 2px lightgray solid;
+    border-radius: 6px;
+     margin-top: 453px;
+     background-color: #fff;
+     cursor: pointer;
+}
+
+.sidebar_bottom p {
+    color: black;
+    margin-left: 6px;
+    font-weight: normal;
+}
+
+.sidebar_hash span {
+    display: flex;
+    font-weight: normal;
+    color: gray;
+}
+.sidebar_group p{
+    color: rgb(88, 31, 221);
+    margin-left: 6px;
+}
+
+.group {
+   margin-left: 4px;
+   color: gray;
+}
+
+.group p {
+    color: rgb(88, 31, 221);
+    margin-left: 6px;
+}
+
+.group span {
+    position: absolute;
+    color: gray;
+    margin: 2px 2px 0px 12px;
+}
+
+.sidebar_end p {
+    color: rgb(88, 31, 221);
+    margin-left: 6px;
+}
+ .sidebar_hash:hover {
+    background-color: rgb(204, 196, 196);
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+ }
+
+ .group:hover {
+    background-color: rgb(204, 196, 196);
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+ }
+/*sidebar_bottom ends*/
+
+/*Right_sidebar*/
+/*right sidebar Top */
+.sidebar_right {
+   
+    flex-basis: 25%;
+    width: 19%;
+    height: 309px;
+    position: absolute;
+    right: 120px;
+    border: 2px lightgrey solid;
+    border-radius: 6px;
+     margin-top: 89px;
+     background-color: #fff;
+     cursor: pointer;
+}
+.sidebar_header {
+    margin: 10px;
+}
+
+.sidebar_header h4 {
+    float: left;
+    font-style: normal;
+}
+
+.sidebar_right ul {
+    margin: 23px;
+    margin-top: 4px;
+}
+
+.sidebar_ul li:hover {
+    background-color: rgb(218, 211, 211);
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+/*right sidebar top End*/
+
+/*right sidebar center*/
+.right_center {
+    flex-basis: 25%;
+    width: 19%;
+    height: 189px;
+    position: absolute;
+    right: 120px;
+    border: 2px lightgrey solid;
+    border-radius: 6px;
+     margin-top: 415px;
+     background-color: #fff;
+     cursor: pointer;
+}
+.right_center ul {
+    margin: 23px;
+    margin-top: 4px;
+}
+
+.right_center h4{
+ float: left;
+ font-weight: normal;
+
+}
+.right_centerTop {
+    margin: 10px;
+}
+.right_ul li:hover {
+    background-color: rgb(218, 211, 211);
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+/*right sidebar center End*/
+
+/*Right sidebar Bottom*/
+
+
+.right_bottom {
+    flex-basis: 25%;
+    width: 19%;
+    height: 338px;
+    position: absolute;
+    right: 120px;
+    border: 2px lightgrey solid;
+    border-radius: 6px;
+     margin-top: 620px;
+     background-color: #fff;
+     cursor: pointer;
+}
+
+.bottom_feed h4 {
+    float: left;
+    font-weight: normal;
+}
+.bottom_feed {
+    margin: 8px;
+}
+
+.right_unilever img {
+     float: left;
+     margin-left: 4px;
+}
+.unilever {
+    margin-left: 45px;
+    margin-bottom: 6px;
+}
+.right_unilever h4:hover {
+    background-color: rgb(218, 211, 211);
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.right_linkedin img {
+    float: left;
+    font-weight: normal;
+    margin-left: 4px;
+}
+.linkedin {
+    margin-left: 45px;
+    margin-bottom: 6px;
+}
+
+.right_linkedin h4:hover {
+    background-color: rgb(218, 211, 211);
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.right_myntra img {
+    float: left;
+    font-weight: normal;
+    margin-left: 4px;
+}
+.myntra {
+    margin-left: 45px;
+    margin-bottom: 6px;
+}
+.right_myntra h4:hover {
+    background-color: rgb(218, 211, 211);
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+/*Right sidebar Bottom end*/
+
+/*Right_sidebar end*/
+
+
+/*Feed Start*/
+/*Feed Top Start*/
+.main-content{
+    flex-basis: 47%;
+
+}
+.create-post{
+    background: #fff;
+    width: 582px;
+    margin-right: 30px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-top: 0px;
+    cursor: pointer;   
+}
+.create-post-input{
+    display: flex;
+    padding: 15px 25px 10px;
+    align-items: flex-start;
+
+}
+
+.create-post-input img{
+ width: 40px;
+ margin-right: 10px;
+ border-radius: 40px;
+
+}
+.create-post-input textarea{
+    width: 100%;
+    border: 1px solid gray;
+    text-align: start;
+    border-radius: 20px;
+    resize: none;
+    background: transparent;
+}
+
+::placeholder{
+    position: relative;
+    top: 5px;
+    font-weight: 500;
+}
+.create-post-link{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-evenly;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: #888;
+}
+
+.create-post-link h4:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/*Feed Top Start ends*/
+
+
+/*feed center */
+.post{
+    background: #fff;
+    padding: 10px 0px 5px 1px;
+    margin-top: 15px;
+    width: 580px;
+    border: 1px lightgray solid;
+    height: 461px;
+    cursor: pointer; 
+}
+.post-author{
+    display: flex;
+    align-items: flex-start;
+   
+}
+.post-author img{
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+.post-author h4{
+    font-size: 15px;
+}
+.post-author p{
+    font-size: 12px;
+    color: #888;
+}
+.post i{
+    position: absolute;
+    right: 410px;
+    top: 230px;
+    color: black;
+
+}
+
+.post>img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.post-stats img{
+    margin-left: 5px;
+}
+
+.post-stats{
+    margin-top: 5px;
+    color: #888;  
+}
+.post-stats:hover{
+    cursor: pointer;
+    color: black;
+}
+.status{
+    display: flex;
+    margin-top: 8px;
+    color: #888;
+}
+.status h4:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/*feed center */
+
+/*Feed bottom Start*/
+
+.video {
+    background: #fff;
+    margin-top: 10px;
+    width: 580px;
+    border: 1px lightgray solid;
+    height: 595px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.video-author{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+   
+}
+
+.video i{
+    position: absolute;
+    right: 410px;
+    top: 715px;
+    color: black;
+}
+.video-author img{
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+.video-author h4{
+    font-size: 15px;
+}
+.video-author p{
+    font-size: 12px;
+    color: #888;
+}
+
+.paragraph {
+    margin-left: 6.5px;
+}
+
+
+.video video {
+    width: 580px;
+    height: 390px;
+}
+.video-stats img {
+    margin-left: 5px;
+}
+
+.video-stats{
+    margin-top: 5px;
+    color: #888;
+}
+.video-stats:hover{
+    cursor: pointer;
+    color: black;
+}
+.video-stats h5:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.video-status{
+    display: flex;
+    margin-top: 8px;
+    color: #888;
+}
+.video-status h4:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/*Feed bottom end */
+
+
+/*Feed Start ends*/
